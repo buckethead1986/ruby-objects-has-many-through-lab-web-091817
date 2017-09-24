@@ -7,7 +7,7 @@ attr_accessor :name
   end
 
   def add_appointment(appointment)
-    @appointments << appointment
+    self.appointments << appointment
     appointment.patient = self #the appointment belongs to the patient(self)
   end
 
@@ -16,7 +16,7 @@ attr_accessor :name
   end
 
   def doctors #iterates over all appointments for this patient instance and collects the doctors associated with eqch appointment
-    @appointments.collect do |appointment|
+    self.appointments.collect do |appointment|
       appointment.doctor
     end
   end

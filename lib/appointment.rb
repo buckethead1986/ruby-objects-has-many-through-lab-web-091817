@@ -1,6 +1,6 @@
 class Appointment
 
-  attr_accessor :patient, :doctor #each appointment has a petient, and belongs to a doctor
+  attr_accessor :date, :patient, :doctor #each appointment has a petient, and belongs to a doctor
 
   def initialize(date, doctor)
     @date = date
